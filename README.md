@@ -1,5 +1,5 @@
-# BZB Music Monorepo
-- `main/` → www.bzbmusic.com
+# BZB Films Monorepo
+- `main/` → www.bzbfilms.com
 - `ponderpine/` → ponderpine.bzbmusic.com (your current files copied verbatim)
 - `shared/` → reusable assets (copy into each site as needed)
 
