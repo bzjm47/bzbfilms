@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral+SC:wght@400;600;700&display=swap');
+:root{--twilight-900:#08111f;--twilight-700:#0b1630;--starlight:#EAF1F7;--mist:#B9C7D9;--pine-700:#0f3b2e;--pine-600:#145341;--pine-500:#1c6b54;--accent:#8fd3c8}
+.bzb-lockup{display:inline-flex;align-items:center;gap:12px;font-feature-settings:'liga' 1,'kern' 1}
+.bzb-lockup .bzbl{font-family:'Space Grotesk',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial;font-weight:700;letter-spacing:.02em}
+.bzb-lockup .sub{font-family:'Spectral SC',ui-serif,Georgia,'Times New Roman',serif;font-weight:600;letter-spacing:.18em}
+.bzb-lockup .divider{width:1px;height:1em;transform:skewX(-10deg);background:currentColor;opacity:.45}
+.bzb-lockup.bzb-xs .bzbl{font-size:16px}.bzb-lockup.bzb-xs .sub{font-size:12px}
+.bzb-lockup.bzb-sm .bzbl{font-size:22px}.bzb-lockup.bzb-sm .sub{font-size:13px}
+.bzb-lockup.bzb-md .bzbl{font-size:28px}.bzb-lockup.bzb-md .sub{font-size:14px}
+.bzb-lockup.bzb-lg .bzbl{font-size:38px}.bzb-lockup.bzb-lg .sub{font-size:16px}
+.bzb-lockup.bzb-xl .bzbl{font-size:56px}.bzb-lockup.bzb-xl .sub{font-size:20px}
+.bzb-lockup.bzb-dark{color:var(--starlight)}.bzb-lockup.bzb-light{color:var(--twilight-900)}.bzb-lockup.bzb-pine{color:var(--pine-500)}
+.bzb-topbar{position:fixed;inset:0 0 auto 0;height:64px;display:flex;align-items:center;background:linear-gradient(180deg,rgba(0,0,0,.25),transparent);padding:14px 20px;z-index:20}
+.bzb-topbar .spacer{flex:1}.bzb-topbar .links a{color:inherit;text-decoration:none;opacity:.85;margin-left:16px}.bzb-topbar .links a:hover{opacity:1}
