@@ -52,17 +52,34 @@
   <header class="topbar"></header>
 
   <main class="container">
-  <div class="hero"><img src="/images/banner.jpg" alt="BZB Films banner" /></div>
-    <div class="hero">
-      <div class="bzb-lockup bzb-xl bzb-dark">
-        <div class="bzbl">BZB</div><div class="divider"></div><div class="sub">FILMS</div>
-      </div>
+
+    <!-- Banner (responsive downscale, keeps aspect) -->
+    <div style="max-width:1200px;margin:0 auto;">
+      <img
+        src="/images/banner-4k.jpg"
+        srcset="/images/banner-800.jpg 800w,
+                /images/banner-1200.jpg 1200w,
+                /images/banner-2400.jpg 2400w,
+                /images/banner-4k.jpg 3840w"
+        sizes="(max-width: 768px) 100vw,
+               (max-width: 1200px) 100vw,
+               1200px"
+        alt="Banner"
+        style="width:100%;height:auto;display:block;"
+        loading="lazy" decoding="async">
     </div>
 
+    <!-- Lockup -->
+    <div class="bzb-lockup bzb-xl bzb-dark">
+      <div class="bzbl">BZB</div><div class="divider"></div><div class="sub">FILMS</div>
+    </div>
+
+    <!-- Cards -->
     <section class="grid">
       <a class="card card--ponderpine" href="https://www.youtube.com/playlist?list=PLmG9akUKqIFWoWlY26GdytbHi_elDhtd3"><h3>Available Now</h3></a>
       <a class="card card--littleradicals" href="https://www.youtube.com/@ponder_pine/videos"><h3>Coming Soon</h3></a>
     </section>
+
   </main>
 
   <footer class="site-footer">
