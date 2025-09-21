@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Little Radicals — BZB Music</title>
+  <title>Little Radicals — BZB Films</title>
   <link rel="manifest" href="/shared/favicons/site.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="/shared/favicons/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/shared/favicons/android-chrome-512x512.png">
@@ -14,9 +14,9 @@
   document.querySelectorAll('a[href]').forEach(a => {
     try {
       const url = new URL(a.getAttribute('href'), location.href);
-      const isBZB = /\.?bzbmusic\.com$/i.test(url.hostname);
+      const isBZB = /\.?bzbFilms\.com$/i.test(url.hostname);
       if (isBZB) {
-        a.removeAttribute('target');  // same window for all *.bzbmusic.com
+        a.removeAttribute('target');  // same window for all *.bzbFilms.com
         a.removeAttribute('rel');
       } else if (url.origin !== location.origin) {
         a.target = '_blank';          // external sites in new tab
@@ -27,9 +27,9 @@
 </script>
 <body>
   <header class="topbar">
-  <a href="https://www.bzbmusic.com"
+  <a href="https://www.bzbFilms.com"
      class="bzb-lockup bzb-md bzb-dark"
-     aria-label="Back to BZB Music">
+     aria-label="Back to BZB Films">
     <span class="bzbl">BZB</span><span class="divider"></span><span class="sub">MUSIC</span>
   </a>
 </header>

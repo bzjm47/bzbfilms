@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ponder &amp; Pine — BZB Music</title>
+  <title>Ponder &amp; Pine — BZB Films</title>
   <meta name="description" content="Ponder &amp; Pine — links to Spotify, Apple Music, TikTok, Instagram, YouTube, and Bandcamp.">
 
   <!-- Shared brand + favicons (must exist in ponderpine/shared after sync) -->
@@ -20,9 +20,9 @@
   document.querySelectorAll('a[href]').forEach(a => {
     try {
       const url = new URL(a.getAttribute('href'), location.href);
-      const isBZB = /\.?bzbmusic\.com$/i.test(url.hostname);
+      const isBZB = /\.?bzbFilms\.com$/i.test(url.hostname);
       if (isBZB) {
-        a.removeAttribute('target');  // same window for all *.bzbmusic.com
+        a.removeAttribute('target');  // same window for all *.bzbFilms.com
         a.removeAttribute('rel');
       } else if (url.origin !== location.origin) {
         a.target = '_blank';          // external sites in new tab
@@ -33,7 +33,7 @@
 </script>
 <body>
   <!-- Top-left corner brand link back to main -->
-  <a class="bzb-corner" href="https://www.bzbmusic.com" aria-label="BZB Music — Home">
+  <a class="bzb-corner" href="https://www.bzbFilms.com" aria-label="BZB Films — Home">
     <span class="bzb-lockup bzb-sm bzb-dark">
       <span class="bzbl">BZB</span><span class="divider"></span><span class="sub">MUSIC</span>
     </span>
